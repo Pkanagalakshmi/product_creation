@@ -92,7 +92,8 @@
       }
 
       const payload = { name, sku, price, category };
-      const webhookUrl = 'https://<your-n8n-instance>/webhook/product-creation'; // Replace with your webhook URL
+const webhookUrl = 'http://localhost:5678/webhook/product-creation';
+ // Replace with your webhook URL
 
       try {
         const response = await fetch(webhookUrl, {
